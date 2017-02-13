@@ -8,7 +8,7 @@ How to use this
 ======================
 Test this out yourself::
 
-        $ git clone <> # Clone the repository
+        $ git clone https://github.com/CSC-IT-Center-for-Science/lega-ingest-workflow.git # Clone the repository
         $ cd ega-ingest-workflow # Change directory
         $ sudo pip install -r requirements_dev.txt # Install depencides
         $ touch tests/home/dataset-xyz # Create example dataset 
