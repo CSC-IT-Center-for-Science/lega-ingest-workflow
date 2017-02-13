@@ -6,14 +6,16 @@ There is two workflows in this repository: one for starting starting the ingesti
 
 How to use this
 ======================
-$ git clone <> # Clone the repository
-$ cd ega-ingest-workflow # Change directory
-$ sudo pip install -r requirements_dev.txt # Install depencides
-$ touch tests/home/dataset-xyz # Create example dataset 
+Test this out yourself::
 
-$ luigid # Start luigid central planner 
-$ python -m luigi --module lega.scripts.process_transfers ProcessTransfer --workspace-root tests/workspace/ --home-path tests/home/ # Run the first workflow
-$ python -m luigi --module lega.scripts.process_workspaces ProcessWorkspaces --workspace-root tests/workspace/ # Run the second workflow 
+        $ git clone <> # Clone the repository
+        $ cd ega-ingest-workflow # Change directory
+        $ sudo pip install -r requirements_dev.txt # Install depencides
+        $ touch tests/home/dataset-xyz # Create example dataset 
+
+        $ luigid # Start luigid central planner 
+        $ python -m luigi --module lega.scripts.process_transfers ProcessTransfer --workspace-root tests/workspace/ --home-path tests/home/ # Run the first workflow
+        $ python -m luigi --module lega.scripts.process_workspaces ProcessWorkspaces --workspace-root tests/workspace/ # Run the second workflow 
 
 What else 
 ======================
